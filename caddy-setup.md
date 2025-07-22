@@ -100,12 +100,12 @@ For local testing, use the included `test-hybrid.sh` script which sets up a loca
 
 1. Build your Next.js application:
    ```bash
-   yarn build
+   npm run build
    ```
 
 2. Start your Next.js server:
    ```bash
-   yarn start
+   npm start
    ```
 
 3. Start Caddy with your production Caddyfile:

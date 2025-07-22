@@ -14,13 +14,13 @@ This is a Next.js-based knowledge base application running in hybrid mode.
 First, install dependencies:
 
 ```bash
-yarn install
+npm install
 ```
 
 Then, run the development server:
 
 ```bash
-yarn dev
+npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -35,13 +35,13 @@ This application uses Next.js in hybrid mode, which means:
 ### Building for Production
 
 ```bash
-yarn build
+npm run build
 ```
 
 ### Starting Production Server
 
 ```bash
-yarn start
+npm start
 ```
 
 ### Testing Hybrid Deployment
