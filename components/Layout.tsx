@@ -19,7 +19,7 @@ export function Layout({ title, description, children }: LayoutProps) {
       <header className="sticky top-0 z-10 bg-white shadow">
         <div className="w-[60%] mx-auto flex items-center justify-between py-4">
           <Link href="/">
-            <img src="/Kolene_2025_Logo.png" alt="Company Logo" className="h-8" />
+            <img src="https://www.kolene.com/wp-content/uploads/2024/11/@3Logo.webp" alt="Company Logo" className="h-8" />
           </Link>
           <nav className="flex space-x-6">
             <Link href="/" className="text-slate-700 hover:text-indigo-600">

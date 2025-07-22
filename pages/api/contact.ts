@@ -106,8 +106,9 @@ ${description}
             </div>
           </div>
 
-          <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e7eb; color: #6b7280; font-size: 14px;">
-            <p>This ticket was submitted via the support form. Please respond directly to ${email} or reference ticket ID ${finalTicketId} in your communications.</p>
+          <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #b3b3b3ff; color: #6b7280; font-size: 14px; background-color: #ffffffff;">
+            <p>This ticket was submitted via the support form. Please respond directly to ${email} or reference ticket ID ${finalTicketId} in your communications.</p><br />
+            <center><img src="https://www.kolene.com/wp-content/uploads/2024/11/@3Logo.webp" alt="Kolene Logo" style="width: 150px; height: auto; margin-top: 10px;" /></center>
           </div>
         </div>
       `,
