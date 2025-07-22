@@ -1,6 +1,6 @@
 {
-  "name": "my-next-app",
-  "version": "0.1.0",
+  "name": "ith",
+  "version": "7.22.2025.A",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
