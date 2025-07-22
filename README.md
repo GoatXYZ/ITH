@@ -9,7 +9,7 @@ This is a Next.js-based knowledge base application running in hybrid mode.
 - Responsive design with Tailwind CSS
 - Full hybrid deployment capability
 
-## Getting Started
+## Getting Started!
 
 First, install dependencies:
 

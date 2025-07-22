@@ -1,16 +1,17 @@
 /** @type {import('next').NextConfig} */
-const { PHASE_DEVELOPMENT_SERVER, PHASE_PRODUCTION_BUILD } = require('next/constants');
+const { PHASE_PRODUCTION_BUILD } = require('next/constants');
 
 module.exports = (phase) => {
   const isProd = phase === PHASE_PRODUCTION_BUILD;
 
   return {
-    // Hybrid mode - no output: 'export' to allow for server components and API routes
+    // Enable static export for GitHub Pages
+    output: 'export',
     trailingSlash: true,
 
     images: {
-      // For hybrid mode, you might want to use the Next.js Image Optimization
-      unoptimized: false,
+      // GitHub Pages requires unoptimized images for static export
+      unoptimized: true,
     },
 
     experimental: {
@@ -18,8 +19,8 @@ module.exports = (phase) => {
       optimizeCss: isProd,
     },
 
-    // Configure a sub‑directory deployment only for production
-    // assetPrefix: isProd ? '/knowledge-base' : '',
-    // basePath:    isProd ? '/knowledge-base' : '',
+    // Configure for GitHub Pages deployment
+    assetPrefix: isProd ? '/ITH' : '',
+    basePath: isProd ? '/ITH' : '',
   };
 };
