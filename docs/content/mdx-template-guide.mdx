@@ -1,0 +1,283 @@
+---
+title: "MDX Template and Formatting Guide"
+category: "Documentation"
+---
+
+## MDX Template and Formatting Guide
+
+This document demonstrates all the different formatting options and content types you can use when creating MDX documentation files.
+
+## Basic Text Formatting
+
+You can use **bold text** to emphasize important points, *italic text* for subtle emphasis, and `inline code` for technical terms or commands.
+
+You can also combine formatting like ***bold and italic*** or **bold with `code`** inside.
+
+## Headers and Structure
+
+Use different header levels to organize your content:
+
+### This is an H3 Header
+#### This is an H4 Header
+##### This is an H5 Header
+
+## Lists and Organization
+
+### Unordered Lists
+- First item with basic text
+- Second item with **bold text**
+- Third item with `inline code`
+- Nested items:
+  - Sub-item one
+  - Sub-item two
+    - Deep nested item
+- Back to main level
+
+### Ordered Lists
+1. First step in a process
+2. Second step with **important** information
+3. Third step with `technical details`
+4. Numbered sub-steps:
+   1. Sub-step A
+   2. Sub-step B
+   3. Sub-step C
+5. Continue main sequence
+
+### Task Lists (Checkboxes)
+- [x] Completed task
+- [x] Another completed item
+- [ ] Pending task
+- [ ] Future task
+- [x] ~~Completed and crossed out~~
+
+## Code Examples
+
+### Inline Code
+Use `npm install` to install packages, or press `Ctrl+C` to cancel.
+
+### Code Blocks
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+```javascript
+// JavaScript example
+function greetUser(name) {
+  return `Hello, ${name}! Welcome to the system.`;
+}
+
+const user = "John Doe";
+console.log(greetUser(user));
+```
+
+```json
+{
+  "name": "example-project",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build"
+  }
+}
+```
+
+```css
+/* CSS styling example */
+.button {
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #2563eb;
+}
+```
+
+## Tables
+
+| Feature | Description | Status |
+|---------|-------------|--------|
+| Authentication | User login system | Complete |
+| File Upload | Document management | In Progress |
+| Notifications | Email alerts | Planned |
+| Reporting | Analytics dashboard | Complete |
+
+### Complex Table Example
+
+| Employee | Department | Role | Start Date | Status |
+|----------|------------|------|------------|--------|
+| John Smith | IT | Senior Developer | 2022-01-15 | <StatusBadge status="complete">Active</StatusBadge> |
+| Jane Doe | HR | Manager | 2021-06-01 | <StatusBadge status="complete">Active</StatusBadge> |
+| Bob Johnson | Finance | Analyst | 2023-03-10 | <StatusBadge status="complete">Active</StatusBadge> |
+
+## Blockquotes and Callouts
+
+> This is a standard blockquote. Use it for important quotes, policies, or highlighted information that needs to stand out from regular text.
+
+<Callout type="info">
+This is an info callout with an icon. Perfect for providing additional context or helpful tips.
+</Callout>
+
+<Callout type="warning">
+This is a warning callout. Use it to highlight important information that users should be aware of.
+</Callout>
+
+<Callout type="error">
+This is an error callout. Use it for critical information, warnings about potential problems, or things to avoid.
+</Callout>
+
+<Callout type="success">
+This is a success callout. Use it to highlight positive outcomes, completed tasks, or successful procedures.
+</Callout>
+
+## Links and References
+
+### Internal Links
+- Link to another doc: [Password Reset Guide](password-reset)
+- Link to external site: [Company Website](https://company.com)
+- Link with title: [Google](https://google.com "Search Engine")
+
+### Reference-style Links
+You can also use [reference-style links][1] which can be defined anywhere in the document.
+
+[1]: https://example.com "Reference Link Example"
+
+## Images and Media
+
+### Image with Alt Text
+![Company Logo](https://via.placeholder.com/300x100/3b82f6/ffffff?text=Company+Logo)
+
+### Image with Caption
+![Dashboard Screenshot](https://via.placeholder.com/600x300/f1f5f9/64748b?text=Dashboard+Screenshot)
+*Figure 1: Main dashboard interface showing key metrics*
+
+## Horizontal Rules
+
+Use horizontal rules to separate sections:
+
+---
+
+## Special Characters and Symbols
+
+### Icons and Symbols
+
+You can use consistent icons throughout your documentation:
+
+- Success: <Icons.CheckCircle /> Complete
+- Error: <Icons.XCircle /> Failed  
+- Warning: <Icons.AlertTriangle /> Attention needed
+- Info: <Icons.Info /> Additional information
+- Arrow: <Icons.ArrowRight /> Next step
+- Email: <Icons.Mail /> Contact via email
+- Phone: <Icons.Phone /> Call for support
+- External link: <Icons.ExternalLink /> Opens in new window
+- Download: <Icons.Download /> Download file
+- Upload: <Icons.Upload /> Upload document
+- Settings: <Icons.Settings /> Configuration
+- User: <Icons.User /> User account
+- Security: <Icons.Lock /> Password protected
+- Shield: <Icons.Shield /> Security feature
+
+### Keyboard Shortcuts
+- Windows: `Ctrl + C` to copy
+- Mac: `⌘ + C` to copy
+- Universal: `Alt + Tab` to switch windows
+
+## Advanced Formatting
+
+### Strikethrough Text
+~~This text is crossed out~~ because it's no longer relevant.
+
+### Superscript and Subscript
+- Water formula: H₂O
+- Einstein's equation: E=mc²
+- Footnote reference¹
+
+### Line Breaks
+Sometimes you need to force a line break  
+without starting a new paragraph.
+
+## Contact Information and Extensions
+
+### Contact Information Components
+
+<ContactInfo type="phone" value="ext. 1234" label="IT Support" />
+<ContactInfo type="phone" value="ext. 5678" label="HR Department" />
+<ContactInfo type="phone" value="ext. 0000" label="Reception" />
+
+<ContactInfo type="email" value="support@company.com" label="General Support" />
+<ContactInfo type="email" value="it-help@company.com" label="IT Help Desk" />
+<ContactInfo type="email" value="hr@company.com" label="HR Inquiries" />
+
+## Step-by-Step Procedures
+
+### Detailed Process Example
+
+<Step number={1} title="Initial Setup">
+Open your web browser, navigate to the company portal, and click the "Login" button in the top right corner.
+</Step>
+
+<Step number={2} title="Authentication">
+Enter your username in the first field, enter your password in the second field, then click "Sign In" or press `Enter`.
+</Step>
+
+<Step number={3} title="Navigation">
+Once logged in, you'll see the dashboard. Use the sidebar menu to navigate and click on your desired section.
+</Step>
+
+## Troubleshooting Section
+
+### Common Issues
+
+**Problem:** Cannot access the system
+- **Solution 1:** Clear your browser cache
+- **Solution 2:** Try a different browser
+- **Solution 3:** Contact IT support
+
+**Problem:** Forgot password
+- **Solution:** Use the password reset link
+- **Alternative:** Contact your manager
+
+## Best Practices for MDX
+
+### Content Organization
+1. **Use clear headers** to structure your content
+2. **Include a table of contents** for long documents
+3. **Use consistent formatting** throughout
+4. **Add examples** for complex procedures
+
+### Writing Style
+- Write in **active voice** when possible
+- Use **bullet points** for lists of items
+- Include **specific examples** rather than abstract concepts
+- **Test all procedures** before publishing
+
+### Technical Details
+- Always include **version numbers** for software
+- Provide **alternative methods** when possible
+- Include **troubleshooting steps** for common issues
+- Add **contact information** for additional help
+
+---
+
+## Document Information
+
+**Last Updated:** January 2024  
+**Version:** 1.0  
+**Author:** Documentation Team  
+**Review Date:** June 2024
+
+**Need Help?**
+If you have questions about creating MDX documentation, contact the documentation team at docs@company.com or ext. 9999.
